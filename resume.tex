@@ -1,8 +1,72 @@
-\documentclass{article}
- 
+\documentclass[11pt, line, margin]{res}
+
 \usepackage{fontspec}
-\setmainfont{COM4t}
- 
+\usepackage{titlepages}
+
+
+\name{Hannah Fouasnon }
+\address{hannah@luckysort.com}
+\address{503.964.2403}
+
+\newcommand{\prettysection}[1]{\setromanfont{TitilliumTitle20}\section{#1}\setromanfont{TitilliumText22L}}
+
 \begin{document}
-My Resume
+\setromanfont{TitilliumTitle20}
+
+
+\begin{resume}
+\setromanfont{TitilliumText22L}
+\prettysection{EDUCATION}
+{\bf Reed College} -  Portland, OR; 2006--2010 \\ 
+Bachelor of Arts in Mathematics. \\
+Thesis -- \textit{A Colorful Clustering: A Structural Analysis of Hartigan's Modal Method for Block
+Clustering}
+
+{\bf Friedl\"{a}nder-Schule} - Berlin, Germany; 2005 \\
+Completed course of study in German
+language. 
+
+{\bf Hartnackschule} - Berlin, Germany; 2005 \\ 
+Completed course of study in German language. 
+
+{\bf Mississippi School for Mathematics and Science} - Columbus, MS; 2003--2005 \\ 
+Public, admissions-based, residential high school for juniors and seniors. 
+
+\prettysection{EXPERIENCE}
+{\bf Lucky Sort Inc., Cofounder} - Portland, OR; April 2011 \\
+Currently addressing the design and implementation needs of a tech startup
+for both product and client work.
+
+{\bf Qmedtrix Inc., R\&D Engineer} - Portland, OR; July 2009--April 2011 \\
+Worked on a small team to develop a scalable platform for various
+medical billing operations in the insurance industry, such as fraud detection, adjudication,
+pricing, and automatic report generation.   
+
+{\bf Reed College, Teacher's Assistant} - Portland, OR;
+Aug. 2008--Dec. 2008 \\
+Assisted the Introduction to Computing class taught in the Fall 2008
+semester. Helped run computing labs, graded homework, and kept office hours for
+tutoring.  
+
+{\bf Texas A\&M University, MCTP Participant} - College Station,
+  TX; Summer 2008 \\
+Selected to participate in a six-week, NSF-funded undergraduate program at Texas
+A\&M (Mentoring through Critical Transistion Points). Experienced gained in signal
+and image analysis, using Fourier analysis, wavelets, and computer software such as
+MatLab. 
+
+{\bf Gulf Coast Research Lab, Summer Intern} - Ocean Springs, MS;
+  Summers 2004--2006 \\
+Studied a parasite that lives on the skin of stingrays; Gave a
+lecture to the American Society of Parasitologists and the Mississippi Academy of
+Sciences; Worked on NSF grant: Small Grants for Exploratory Research (NSF Award
+No. 0608603). 
+
+\prettysection{KEYWORDS}
+Python, Scala, R, Java, SQL, Javascript, LaTeX, Emacs, Linux (primarily
+Debian-based), git, ggplot, Postgresql, Mongodb, Redis, Rabbitmq,
+distributed design, agile, information science, data visualization
+ 
+\end{resume}
 \end{document}
+
