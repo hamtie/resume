@@ -1,3 +1,6 @@
 *.aux
 *.log
 fontspec
+*.glo
+*.idx
+*.out
