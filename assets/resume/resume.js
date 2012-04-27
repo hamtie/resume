@@ -1,4 +1,4 @@
-PDFJS.getPdf('../pdf/resume.pdf', function getPdfResume(data) {
+PDFJS.getPdf('/assets/resume/resume.pdf', function getPdfResume(data) {
   //
   // Instantiate PDFDoc with PDF data
   //
@@ -20,4 +20,4 @@ PDFJS.getPdf('../pdf/resume.pdf', function getPdfResume(data) {
   page.startRendering(context);
 });
 
-PDFJS.workerSrc = '../src/pdf.js';
+PDFJS.workerSrc = '/assets/resume/pdf.js';

@@ -1,17 +1,16 @@
 ---
 layout: page
-title: Blog
-header: Posts
+title: Resume
+header: Resume
 group: navigation
 ---
 
 {% include JB/setup %}
 
+<script type="text/javascript" src="/assets/resume/pdf.js"></script>
+<script type="text/javascript" src="/assets/resume/resume.js"></script>
+<link href='/assets/resume/resume.css' rel='stylesheet' type='text/css'>
 
-{% for post in site.posts %}
-<h3 class="posts-title"> {{ post.title }} </h3>
-<span> {{ post.date | date_to_string }} </span>
-<hr />
-{{ post.content }}
-<hr />
-{% endfor %}
+<center>[<a href="/assets/resume/resume.pdf"> download </a>]</center>
+<canvas id="the-canvas"/>
+  
