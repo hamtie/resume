@@ -1,0 +1,17 @@
+---
+layout: page
+title: Blog
+header: Posts
+group: navigation
+---
+
+{% include JB/setup %}
+
+
+{% for post in site.posts %}
+<h3 class="posts-title"> {{ post.title }} </h3>
+<span> {{ post.date | date_to_string }} </span>
+<hr />
+{{ post.content }}
+<hr />
+{% endfor %}
