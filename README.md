@@ -1,8 +1,9 @@
 README
 ======
 
-This repository houses the source code to generate my resume. If you'd
-like to use the source code to make your own resume, the following
+If you just want to see my resume, go [here](hanelifou.com/resume).
+
+If you'd like to use the source code to make your own resume, the following
 contains information about the resources I used to make it. (Right now
 I'm using a resume template from someone else but might shift over to my own eventually.)
 
