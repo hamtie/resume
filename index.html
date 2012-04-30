@@ -6,11 +6,38 @@ group: navigation
 ---
 
 {% include JB/setup %}
+{% assign RESUME_PATH = "/assets/themes/resume/" %}
 
-<script type="text/javascript" src="/resume/assets/resume/pdf.js"></script>
-<script type="text/javascript" src="/resume/assets/resume/resume.js"></script>
-<link href='/assets/resume/resume.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="{{ RESUME_PATH }}/pdf.js"></script>
+<script type="text/javascript">
+  PDFJS.getPdf("{{ RESUME_PATH }}/resume.pdf", function getPdfResume(data) {
+  //
+  // Instantiate PDFDoc with PDF data
+  //
+  var pdf = new PDFJS.PDFDoc(data);
+  var page = pdf.getPage(1);
+  var scale = 1.5;
 
-<center>[<a href="/resume/assets/resume/resume.pdf"> download </a>]</center>
+  //
+  // Prepare canvas using PDF page dimensions
+  //
+  var canvas = document.getElementById('the-canvas');
+  var context = canvas.getContext('2d');
+  canvas.height = page.height * scale;
+  canvas.width = page.width * scale;
+  
+  //
+  // Render PDF page into canvas context
+  //
+  page.startRendering(context);
+  });
+
+  PDFJS.workerSrc = "{{ RESUME_PATH  }}/pdf.js";
+
+</script>
+
+<link href="{{ RESUME_PATH }}/resume.css" rel='stylesheet' type='text/css'>
+
+<center>[<a href="{{ RESUME_PATH }}/resume.pdf"> download </a>]</center>
 <canvas id="the-canvas"/>
   
