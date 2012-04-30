@@ -4,3 +4,4 @@ fontspec
 *.glo
 *.idx
 *.out
+*_site
