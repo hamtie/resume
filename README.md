@@ -1,7 +1,7 @@
 README
 ======
 
-If you just want to see my resume, go [here](hanelifou.com/resume).
+If you just want to see my resume, go [here](https://github.com/hamtie/resume/blob/master/resume.pdf).
 
 If you'd like to use the source code to make your own resume, the following
 contains information about the resources I used to make it. (Right now
